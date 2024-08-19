@@ -20,7 +20,7 @@ header{
     margin: auto;
 }
 .header-container{
-    padding: 12.5px 80px;
+    padding: 12.5px 160px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -68,7 +68,7 @@ header{
  
   /* Home Section  */
 .wrapper{
-    margin:0 80px;
+    margin:0 160px;
 }
 .content{
     position: relative;
@@ -186,6 +186,7 @@ color: #0F172A;
 
  /* Stats Section */
 .stat-container{
+    margin-top: 60px;
     padding: 40px 80px;
     background: #F8FAFC;
     display: flex;
@@ -227,7 +228,7 @@ color: #0F172A;
 
   /* Top Catagories */
  .catagory-container{
-    padding: 60px  80px;
+    padding: 60px 160px;
  }
  .catagory-header{
     display: flex;
@@ -253,6 +254,7 @@ color: #0F172A;
  margin-top: 24px;
  display: flex;
 justify-content: space-between;
+
 }
 .catagory-card-inner{
     display: flex;
@@ -265,6 +267,9 @@ justify-content: space-between;
     border: 1px solid #E2E8F0;
     border-radius: 16px;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
+}
+.catagory-card:nth-child(2){
+    width:288px !important;
 }
 .telescope-bg{
     border-radius: 50%;
@@ -302,6 +307,7 @@ justify-content: space-between;
     margin-top: 24px ;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .guide{
     font-size: 18px;
@@ -410,7 +416,7 @@ gap:8px;
     background: #F8FAFC;
 }
 .customer-inner{
-    padding:80px 0px 64px 80px;
+    padding:80px 0px 100px 80px;
 }
 .customer-heading{
     font-size: 24px;
@@ -472,7 +478,7 @@ article{
                  /* About Us */
             /* Become an Instructor */
 .journey-inner{
-    padding: 60px 159px;
+    padding: 60px 160px;
 }
 .journey-content{
     display: flex;
@@ -570,11 +576,64 @@ text-align: left;
           /*Footer*/
 /* Responsive */
 
-@media  (min-width:1200px;){
-.catagory-wrap{
+@media  (max-width:1300px){
+.catagory-wrap,.course-list,.instructor-list,.review-card-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+.journey-box{
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px;
 }
+.journey-box:last-child{
+    flex-wrap: wrap-reverse;
+    margin-top: 60px;
+}
+.footer-inner{
+    flex-direction: column;
     
+    justify-content: space-evenly;
+    gap: 30px;
+
 }
+.stat-container{
+    flex-direction: column;
+    gap:50px;
+}
+.vertical-line{
+    rotate: 180deg;
+    width: 100px;
+}
+}
+.catagory-card,.course-card{
+   margin-top: 24px !important;
+}
+
+@media  (max-width:720px){
+    .header-container{
+        padding: 12.5px 20px;
+}
+.wrapper{
+    margin:0 20px;
+}
+.catagory-container{
+    padding: 60px 20px;
+ }
+ .customer-inner{
+    padding-left: 20px;  
+  }
+    .journey-inner{
+        padding: 60px 20px;
+    }
+    .footer-inner{
+        background: #1E293B;
+        padding: 80px 20px 130px ;
+}
+}
+        /* Responsive */
+        /* Hover */
+
+        /* Hover */
