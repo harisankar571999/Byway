@@ -124,7 +124,7 @@ header{
 .student-1{
     position: absolute;
     vertical-align: middle;
-    top: 147px;
+    top: 200px;
     left: 845.72px;
 }
 .student-2{
@@ -133,21 +133,59 @@ header{
     left:1070px;
     overflow: hidden;
 }
+.student-3{
+    position: absolute;
+    top: 84.56px;
+    left: 1060px;
+}
 .model-bg-2{    
     background: #FACC15;
     width: 222px;
     height: 222px;
     border-radius: 50%;
     position: relative;
-    z-index: -10;
+    overflow: hidden;
 }
-
+.model-bg-3{
+    position: relative;
+    width: 217.35px;
+    height: 217.35px;
+    border-radius: 50%;
+    background: #60A5FA;
+    overflow: hidden;
+    z-index: 1;
+}
+.dotted-bg{
+    position: absolute;
+    top: 210px;
+    left: 800px;
+    width: 68px;
+    height: 92px;
+    rotate: -81.92deg;
+    background-color:transparent;
+    background-image: radial-gradient(#E2E8F0 2px, transparent 2px);
+    background-size: 12px 12px;
+}
+.dotted-upward{
+    position: absolute;
+    top: 78px;
+    left: 1029px;
+    width: 68px;
+    height: 92px;
+    rotate: -0 deg;
+    background-color:transparent;
+    background-image: radial-gradient(#E2E8F0 2px, transparent 2px);
+    background-size: 12px 12px;
+}
 .model-bg{
     background: #F87171;
     width: 204.54px;
     height: 204.54px;
-    border-radius: 50%;}
-  
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
 .model-1{ 
     top:-55px;
     position: absolute;
@@ -157,7 +195,37 @@ header{
     width: 331.64px;
     position: absolute;
     top:11px;
-    left:-20px;
+    left:-30px;
+}
+.model-3{
+    position: absolute;
+    width: 217.35px;
+    height: 289.08px;
+    top:-44px;
+    
+}
+.student-1 .crop{
+    position: relative;
+    z-index: 99;
+    top: -250px;
+}
+.student-3 .crop{
+    position: relative;
+    z-index: 99;
+    top: -262px;
+    left: 22px;
+}
+.arc {
+    position: absolute;
+    top: -15px; /* Adjust based on desired position */
+    left: -15px; /* Adjust based on desired position */
+    width: 148.82px;
+    height: 211.68px;
+    border: 1.41px solid #CBD5E1;
+    border-radius: 50%;
+    background-color: #000;     
+    z-index: 3;
+    clip-path: circle(2% at 50% 50%);
 }
 .community-container{
     position: absolute;
@@ -171,7 +239,9 @@ header{
     top:439px;
     left: 998px;
     z-index: 10;
+    background-color: #fff;
 }
+
 .community-text{
     
 font-family: inter;
