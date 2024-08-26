@@ -17,10 +17,12 @@ a{
 
 /* Header Section */
 header{
-    margin: auto;
 }
 .header-container{
-    padding: 12.5px 160px;
+   
+    width: 90%;
+    margin: 0 auto;
+    padding: 12.5px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -33,7 +35,7 @@ header{
     display: flex;
     align-items: center;
 }
-.logo span{
+.logo h1{
     color: #334155;
     font-weight: 500;
     font-size: 16px;
@@ -41,7 +43,7 @@ header{
 }
 .account-list{
    display: flex;
-   gap: 10px;
+   gap: 24px;
 }
 .login-link{
     padding: 10px;
@@ -68,7 +70,8 @@ header{
  
   /* Home Section  */
 .wrapper{
-    margin:0 160px;
+    margin: 0 auto;
+    width: 90%;
 }
 .content{
     position: relative;
@@ -113,8 +116,7 @@ header{
 .polygon-container{
     position: absolute;
     top: 301px;
-    left: 1087px;
-    right: 50px;
+    left: 1050px;
 }
 .polygon{
     width: 13.5px;
@@ -149,18 +151,18 @@ header{
     position: absolute;
     vertical-align: middle;
     top: 200px;
-    left: 845.72px;
+    left: 810px;
 }
 .student-2{
     position: absolute;
-    top:337px;
-    left:1070px;
+    top:345px;
+    left: 1020px;
     overflow: hidden;
 }
 .student-3{
     position: absolute;
-    top: 84.56px;
-    left: 1060px;
+    top: 74.56px;
+    left: 1013px;
 }
 .model-bg-2{    
     background: #FACC15;
@@ -181,8 +183,8 @@ header{
 }
 .dotted-bg{
     position: absolute;
-    top: 210px;
-    left: 800px;
+    top: 20px;
+    left: -40px;
     width: 68px;
     height: 92px;
     rotate: -81.92deg;
@@ -192,8 +194,8 @@ header{
 }
 .dotted-upward{
     position: absolute;
-    top: 78px;
-    left: 1029px;
+    top: -20px;
+    left: -28px;
     width: 68px;
     height: 92px;
     rotate: -0 deg;
@@ -249,8 +251,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top:439px;
-    left: 998px;
+    top:455px;
+    left: 950px;
     z-index: 10;
     background-color: #fff;
 }
@@ -270,7 +272,7 @@ color: #0F172A;
  /* Stats Section */
 .stat-container{
     margin-top: 60px;
-    padding: 40px 80px;
+    padding: 40px 40px;
     background: #F8FAFC;
     display: flex;
     align-items: center;
@@ -311,7 +313,7 @@ color: #0F172A;
 
          /* Top Catagories */
  .catagory-container{
-    padding: 60px 160px;
+    margin: 60px 0px;
  }
  .catagory-header{
     display: flex;
@@ -541,14 +543,28 @@ gap:8px;
     border: 1px solid #E2E8F0;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
 }
+.review-card:nth-child(4){
+    display: none;
+}
+
+.review-card-last{
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    height: 276px;
+    width: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+}
 article{
-    margin-top: 4px;
+    margin-top: 20px;
     font-size: 16px;
+    line-height: 28px;
     font-weight: 400;
     color: #000;
 }
 .author{
-    margin-top: 8px;
+    margin-top: 20px;
     display: flex;
     gap:8px;
     align-items: center;
@@ -569,7 +585,7 @@ article{
 
             /* Become an Instructor */
 .journey-inner{
-    padding: 60px 160px;
+    padding: 60px 100px;
 }
 .journey-content{
     display: flex;
@@ -580,6 +596,9 @@ article{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.journey-box:nth-child(2){
+    margin-top: 100px;
 }
 .journey-heading{
     font-size: 20px;
@@ -632,6 +651,7 @@ ul.help-list,.get-help-container{
     gap:8px;
 }
 .byway-text-foot{
+color: white;
 font-size: 18px;
 font-weight: 600;
 line-height: 28.8px;
@@ -644,6 +664,7 @@ font-size: 12px;
 font-weight: 300 ;
 line-height: 21px;
 text-align: left;
+color: #CBD5E1;
 }
 .get-help-heading{
 font-family: inter;
@@ -653,13 +674,15 @@ line-height: 28.8px;
 text-align: left;
 }
 .help-item a{
-    color:#fff
+    color: #CBD5E1;
 }
 .help-item{
 font-size: 14px;
 font-weight: 300;
 line-height: 22.4px;
 text-align: left;
+
+
 }
 .social-media{
     margin-top: 18px;
@@ -676,6 +699,12 @@ text-align: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.review-card-last{
+    display: none;
+}
+.review-card:nth-child(4){
+    display:block;
 }
 .journey-box{
     flex-wrap: wrap ;
@@ -736,6 +765,7 @@ text-align: left;
         background: #1E293B;
         padding: 80px 20px 130px ;
 }
+}
 @media  (max-width:500px){
     .content-heading{
         font-size: 32px;
@@ -767,13 +797,19 @@ text-align: left;
     transition: all .5s ease-in-out;
     background: rgba(0,0,0,0.1)
 }
+.polygon:hover{
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transform: rotateZ(60deg);
+    
+}
 .login-link:hover{
     transition: all .5s ease-in-out;
-    background: rgba(0,0,0,0.1) 
+    background: rgba(0,0,0,0.1) ;
 }
 .sign-up-link:hover{
     transition: all .5s ease-in-out;
-    background: rgba(0,0,0,0.9)
+    background: rgba(0,0,0,0.9);
 }
 .journey-btn:hover,.journey-botton:hover,.left-btn:hover,.right-btn:hover{
   background-color:#334155 ;
