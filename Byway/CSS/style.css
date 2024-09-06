@@ -16,8 +16,7 @@ a{
 }
 
 /* Header Section */
-header{
-}
+
 .header-container{
    
     width: 90%;
@@ -113,159 +112,30 @@ header{
     line-height: 22.5px;
     color: #fff;
 }
-.polygon-container{
-    position: absolute;
-    top: 301px;
-    left: 1050px;
-}
-.polygon{
-    width: 13.5px;
-    height: 13.5px;
-    rotate: 45deg;
-    background-color: #fff;
-}
-.polygon-circle{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #0F172A;
+.content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 100px;
+    justify-content: space-between;
 }
-.arc{
- border-radius: 50%;
+.right-image{
+    margin-top: 20px;
 }
-.arc-inner{
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    width: 211.68px;
-    height: 211.68px;
-    top: 363.32px;
-    left: 1159.18px;
-    gap: 0px;
-    border: 1.41px 1.41px 1.41px 1.41px solid #CBD5E1;
-    opacity: 0px;
+@media (max-width:1320px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap:-50px;
+    }
+    .right-image{;
+    }
+    .content-left{
+        padding-bottom: 20px;
+    }
 }
-.student-1{
-    position: absolute;
-    vertical-align: middle;
-    top: 200px;
-    left: 810px;
-}
-.student-2{
-    position: absolute;
-    top:345px;
-    left: 1020px;
-    overflow: hidden;
-}
-.student-3{
-    position: absolute;
-    top: 74.56px;
-    left: 1013px;
-}
-.model-bg-2{    
-    background: #FACC15;
-    width: 222px;
-    height: 222px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-}
-.model-bg-3{
-    position: relative;
-    width: 217.35px;
-    height: 217.35px;
-    border-radius: 50%;
-    background: #60A5FA;
-    overflow: hidden;
-    z-index: 1;
-}
-.dotted-bg{
-    position: absolute;
-    top: 20px;
-    left: -40px;
-    width: 68px;
-    height: 92px;
-    rotate: -81.92deg;
-    background-color:transparent;
-    background-image: radial-gradient(#E2E8F0 2px, transparent 2px);
-    background-size: 12px 12px;
-}
-.dotted-upward{
-    position: absolute;
-    top: -20px;
-    left: -28px;
-    width: 68px;
-    height: 92px;
-    rotate: -0 deg;
-    background-color:transparent;
-    background-image: radial-gradient(#E2E8F0 2px, transparent 2px);
-    background-size: 12px 12px;
-}
-.model-bg{
-    background: #F87171;
-    width: 204.54px;
-    height: 204.54px;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-}
-.model-1{ 
-    top:-55px;
-    position: absolute;
-    width: 183.62px;
-}
-.model-2{
-    width: 331.64px;
-    position: absolute;
-    top:11px;
-    left:-30px;
-}
-.model-3{
-    position: absolute;
-    width: 217.35px;
-    height: 289.08px;
-    top:-44px;
-    
-}
-.student-1 .crop{
-    position: relative;
-    z-index: 99;
-    top: -250px;
-}
-.student-3 .crop{
-    position: relative;
-    z-index: 99;
-    top: -262px;
-    left: 22px;
-}
-
-.community-container{
-    position: absolute;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 16px 0px #0000001F;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top:455px;
-    left: 950px;
-    z-index: 10;
-    background-color: #fff;
-}
-
-.community-text{
-    
-font-family: inter;
-font-size: 12px;
-font-weight: 600;
-line-height: 14.52px;
-text-align: left;
-color: #0F172A;
-
+@media (max-width:500px){
+    .right-image{
+        width: 100%;
+    }
 }
  /* Home Section  */
 
@@ -508,7 +378,7 @@ gap:8px;
     background: #F8FAFC;
 }
 .customer-inner{
-    padding:80px 0px 100px 80px;
+    padding:80px 0px 64px 80px;
 }
 .customer-heading{
     font-size: 24px;
@@ -550,7 +420,7 @@ gap:8px;
 .review-card-last{
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-    height: 276px;
+    height: 300px;
     width: 40px;
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
@@ -840,9 +710,9 @@ text-align: left;
     transition: all .65s ease-in-out;
     transition-delay: .01ms;
     transform:  scaleZ(1.1)} */
-.help-item:hover{
+/* .help-item:hover{
     text-decoration: underline;
-}
+} */
 .button-right:hover{
     background-color: rgba(0,0,255,0.1);
 }
